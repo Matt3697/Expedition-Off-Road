@@ -8,17 +8,14 @@ public class PlayerManager : MonoBehaviour{
 
     void Awake(){
         if(instance == null){
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
             instance = this;
         }
         else if (instance != this){
             Destroy(gameObject);
-        }
-        
+        } 
     }
 
-    public void selectBuggy(string name){
-        PlayerManager.instance.playerName = name;
-    }
+    
 
 }

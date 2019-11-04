@@ -401,20 +401,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerManager
       objectReference: {fileID: 0}
+    - target: {fileID: 9217876182743045307, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 913.77167
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 448.07965
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1411.5414
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
         type: 3}

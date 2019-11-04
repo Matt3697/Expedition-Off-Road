@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
 
 
     private void Awake(){
-        string selectedPlayerName = PlayerManager.instance.playerName;
+        string selectedPlayerName = "rzrOp4";//PlayerManager.instance.playerName;
         foreach(GameObject p in players){
             if(p.name == selectedPlayerName){
                 p.SetActive(true);
