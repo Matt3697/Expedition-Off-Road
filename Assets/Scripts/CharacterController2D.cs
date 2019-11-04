@@ -29,7 +29,6 @@ public class CharacterController2D : MonoBehaviour
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 		FindObjectOfType<AudioManager>().Play("MenuSound");
-		FindObjectOfType<AudioManager>().Play("engineStart");
 
 
 		if (OnLandEvent == null)

@@ -16,16 +16,15 @@ public class CameraController : MonoBehaviour
 
 
     private void Awake(){
-        string selectedPlayerName = FindObjectOfType<BuggyBuilder>().getPlayer();
+        string selectedPlayerName = PlayerManager.instance.playerName;
         foreach(GameObject p in players){
-            if(p.ToString() == selectedPlayerName){
+            if(p.name == selectedPlayerName){
                 p.SetActive(true);
                 player = p;
                 Debug.Log(p.name);
             }
             else{
                 p.SetActive(false);
-                 Debug.Log(p.name);
             }
         }
 	}

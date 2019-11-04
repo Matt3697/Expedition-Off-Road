@@ -202,8 +202,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1944385898}
-        m_MethodName: playerSelect
+      - m_Target: {fileID: 7433956116832586157}
+        m_MethodName: selectBuggy
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -487,8 +487,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1944385898}
-        m_MethodName: playerSelect
+      - m_Target: {fileID: 7433956116832586157}
+        m_MethodName: selectBuggy
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -831,6 +831,7 @@ GameObject:
   - component: {fileID: 591583074}
   - component: {fileID: 591583073}
   - component: {fileID: 591583072}
+  - component: {fileID: 591583076}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -919,6 +920,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &591583076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591583071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f6960a4ea7145d8a9591f5d67d6cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: 
+  buggies: []
 --- !u!1 &742143693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,8 +1095,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1944385898}
-        m_MethodName: playerSelect
+      - m_Target: {fileID: 7433956116832586157}
+        m_MethodName: selectBuggy
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1209,8 +1224,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1944385898}
-        m_MethodName: playerSelect
+      - m_Target: {fileID: 7433956116832586157}
+        m_MethodName: selectBuggy
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1917,6 +1932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
+  buggies: []
 --- !u!1 &1945585688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2202,3 +2218,99 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41f7d3e8ce31240b4b2b6969f0b8d9ac, type: 3}
+--- !u!1001 &7433956116832586156
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9217876182743045307, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 913.77167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 448.07965
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1411.5414
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918577845519433329, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536976050012607428, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: buggies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536976050012607428, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: buggies.Array.data[0]
+      value: rzrOp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536976050012607428, guid: 13649a3a6c3d2402c98edacb52df69da,
+        type: 3}
+      propertyPath: buggies.Array.data[1]
+      value: rzrOp4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 13649a3a6c3d2402c98edacb52df69da, type: 3}
+--- !u!114 &7433956116832586157 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4536976050012607428, guid: 13649a3a6c3d2402c98edacb52df69da,
+    type: 3}
+  m_PrefabInstance: {fileID: 7433956116832586156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f6960a4ea7145d8a9591f5d67d6cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

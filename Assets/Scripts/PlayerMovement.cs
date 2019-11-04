@@ -7,12 +7,10 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public float runSpeed = 40f;
     float horizontalMove = 0f;
-    private bool isMoving = false;
 	private bool engineStart = true;
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
     }
 
