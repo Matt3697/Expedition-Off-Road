@@ -15,4 +15,8 @@ public class BuggyBuilder : MonoBehaviour{
     public void selectBuggy(string name){
         //PlayerManager.instance.playerName = name;
     }
+
+    public void playClick(){
+        FindObjectOfType<AudioManager>().Play("buttonClick");
+    }
 }

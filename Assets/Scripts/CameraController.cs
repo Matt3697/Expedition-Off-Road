@@ -16,12 +16,11 @@ public class CameraController : MonoBehaviour
 
 
     private void Awake(){
-        string selectedPlayerName = "rzrOp4";//PlayerManager.instance.playerName;
+        string selectedPlayerName = "rzrOp1";//PlayerManager.instance.playerName;
         foreach(GameObject p in players){
             if(p.name == selectedPlayerName){
                 p.SetActive(true);
                 player = p;
-                Debug.Log(p.name);
             }
             else{
                 p.SetActive(false);
@@ -40,5 +39,9 @@ public class CameraController : MonoBehaviour
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
         transform.position = player.transform.position + offset;
+    }
+
+    public GameObject getPlayer(){
+        return player;
     }
 }
